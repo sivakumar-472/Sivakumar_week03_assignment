@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0), url('path_to_background_pattern.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+.design{
+    padding-top:  50px;
+}
+
+.card-wrapper {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card-wrapper:hover {
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.3);
+    transform: translateY(-8px);
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+.img-display {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.img-showcase {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.img-showcase img {
+    min-width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-showcase img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.img-select {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.img-item {
+    margin: 0.3rem;
+    transition: all 0.3s ease;
+}
+
+.img-item img {
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-item img:hover {
+    border-color: #256eff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-content {
+    padding: 2rem;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+.product-content:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.product-title {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #12263a;
+    margin: 1rem 0;
+    position: relative;
+    padding-bottom: 0.5rem;
+    background: linear-gradient(90deg, #256eff, #1b8dfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.product-title span {
+    font-weight: 800;
+}
+
+.product-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #256eff;
+    border-radius: 2px;
+}
+
+.product-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    background: #256eff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-link:hover {
+    background: #1b8dfc;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-rating {
+    color: #ffc107;
+}
+
+.product-rating span {
+    font-weight: 600;
+    color: #252525;
+}
+
+.product-price {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #256eff;
+}
+
+.product-price span {
+    font-weight: 400;
+}
+
+.last-price span {
+    color: #f64749;
+    text-decoration: line-through;
+}
+
+.new-price span {
+    color: #256eff;
+}
+
+.product-detail h2 {
+    text-transform: capitalize;
+    color: #12263a;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid #256eff;
+    margin-bottom: 1rem;
+}
+
+.product-detail p {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    color: #555;
+}
+
+.product-detail ul {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.product-detail ul li {
+    margin: 0;
+    list-style: none;
+    background: url('shoes_images/checked.png') left center no-repeat;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    color: #555;
+}
+
+.product-detail ul li span {
+    font-weight: 400;
+}
+
+.purchase-info {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.purchase-info input,
+.purchase-info .btn {
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    outline: 0;
+    background: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.purchase-info input {
+    width: 60px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.purchase-info .btn {
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+}
+
+.purchase-info .btn:first-of-type {
+    background: #256eff;
+}
+
+.purchase-info .btn:last-of-type {
+    background: #f64749;
+}
+
+.purchase-info .btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cart-info {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    background: #256eff;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cart-info:hover {
+    background: #1b8dfc;
+    transform: scale(1.05);
+}
+
+#cart-quantity, #cart-total {
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 992px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-title {
+        font-size: 2rem;
+    }
+
+    .product-content {
+        padding: 1rem;
+    }
+
+
+}
